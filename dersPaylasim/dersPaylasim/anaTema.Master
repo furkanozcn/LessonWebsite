@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="anaTema.master.cs" Inherits="dersPaylasim.anaTema" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></div>
+        <div id="menubar1" class="menubar1">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Kayıt Ol" Value="Kayıt Ol"></asp:MenuItem>
+                        <asp:MenuItem Text="Giriş Yap" Value="Giriş Yap"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+
+            </asp:ContentPlaceHolder></div>
+        <div id="menubar2" class="menubar2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Anasayfa" Value="Anasayfa"></asp:MenuItem>
+                        <asp:MenuItem Text="Online Eğitimler" Value="Online Eğitimler"></asp:MenuItem>
+                        <asp:MenuItem Text="Yüzyüze Eğitimler" Value="Yüzyüze Eğitimler"></asp:MenuItem>
+                        <asp:MenuItem Text="Yaklaşan Etkinlikler" Value="Yaklaşan Etkinlikler"></asp:MenuItem>
+                        <asp:MenuItem Text="S.S.S" Value="S.S.S"></asp:MenuItem>
+                        <asp:MenuItem Text="İletişim" Value="İletişim"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="body"><asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"></asp:ContentPlaceHolder></div>
+        <div id="footer"><asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server"></asp:ContentPlaceHolder></div>
+    </form>
+</body>
+</html>
